@@ -22,7 +22,7 @@ return new class extends Migration
 
          
             $table->integer('shipping_addresses_id')->unsigned();
-            $table->foreigh('shipping_addresses_id')->references('id')->on('shipping_addresses')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('shipping_addresses_id')->references('id')->on('shipping_addresses')->onDelete('cascade')->onUpdate('cascade');
         
 
             $table->timestamps();

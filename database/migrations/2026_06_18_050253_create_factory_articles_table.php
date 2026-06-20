@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('delivery_time');
             
             $table->integer('articles_id')->unsigned();
-            $table->foreigh('articles_id')->references('id')->on('articles')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('articles_id')->references('id')->on('articles')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
