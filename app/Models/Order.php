@@ -12,7 +12,7 @@ class Order extends Model
         
         'date_time_creation',
         'subtotal',
-        'tax_amount',
+        'iba',
         'additional_note',
         'order_status',
 
