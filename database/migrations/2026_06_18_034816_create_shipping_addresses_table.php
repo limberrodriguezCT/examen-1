@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('city', 30);
             $table->string('reference_location',40);
             $table->foreign('customer_id')->unsigned();
-            $table->foreign('customer_id')->references('id')->on('customer')->onDelete('cascade');
+            $table->foreign('customer_id')->references('id')->on('customer')->onDelete('cascade')->onUpdate('cascade');
 
             $table->timestamps();
         });

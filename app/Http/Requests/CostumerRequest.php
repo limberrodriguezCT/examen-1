@@ -35,16 +35,16 @@ class CostumerRequest extends FormRequest
         ];
     }
     public function messages(): array
-}
+{
     return[
         'name.requerid' => 'El nombre es requerido',
         'name.string' => 'El nombre debe de ser una cadena de texto',
-        'name.max='> 'El nombre debe de tener menos de 255 caracteres',
+        'name.max' => 'El nombre debe de tener menos de 255 caracteres',
 
         'email.requerid' => 'El nombre es requerido',
         'email.string' => 'El nombre debe de ser una cadena de texto',
-        'email.max='> 'El nombre debe de tener menos de 255 caracteres',
+        'email.max' => 'El nombre debe de tener menos de 255 caracteres'
 
-    
-
-    ]
+    ];
+}
+}

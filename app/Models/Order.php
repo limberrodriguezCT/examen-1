@@ -19,11 +19,11 @@ class Order extends Model
     ];
     public function customer()
     {
-        return $this->belongsTo(related: customer::class);
+        return $this->belongsTo( customer::class);
     }
     public function shippingAddress()
     {
-        return $this->belongsTo(related:shippingAddress::class);
+        return $this->belongsTo(shippingAddress::class);
     }
     
     public function orderLines(): HasMany

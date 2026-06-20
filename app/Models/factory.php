@@ -15,8 +15,8 @@ class Factory extends Model
         'address',
         'supplier_status',
     ];
-    public function factory ()
+    public function factoryarticles ()
     {
-        return $this->hasMany(related: FactoryArticles:: class);
+        return $this->hasMany(related: FactoryArticle:: class);
 }
 }

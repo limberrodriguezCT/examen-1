@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class FactoryArticles extends Model
+class FactoryArticle extends Model
 {
     protected $fillable = [
         'factory_id',
@@ -14,13 +14,13 @@ class FactoryArticles extends Model
         'delivery_time',
         
     ];
-    public function factoryArticle()
+    public function factory()
     {
         return $this->belongsTo(Factory:: class);
     }
 
     public function article()
     {
-    return $this->belongsTo(related: Article::class);
+    return $this->belongsTo( Article::class);
     }
 }
